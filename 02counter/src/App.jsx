@@ -4,15 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
-//const counter = 5;
 let   [counter, setCounter] = useState(0);
 
-const abbValue = () => {
+const addValue = () => {
   counter++;
-  console.log('Add Value',counter);
+  //console.log('Add Value',counter);
   setCounter(counter); 
 }
 
@@ -21,7 +17,7 @@ const removeValue = () => {
   if(counter <0){
     counter = 0;
   }
-  console.log('Remove Value',counter);
+  //console.log('Remove Value',counter);
   setCounter(counter); 
 }
 
@@ -30,7 +26,7 @@ const removeValue = () => {
      <h1>Chai aur Code</h1>
      <h2>Counter Clock : {counter}</h2>
      <button
-     onClick={abbValue}
+     onClick={addValue}
      >
       Add Value
      </button>
